@@ -20,7 +20,7 @@ export const PlayerStats = () => {
       </div>
       <StatRow text="Strikeout Rate 20%" />
       <StatRow text="Throw/Pitch velocity 90 - 95 MPH" />
-      <StatRow text="Batting Average .275 - .300" />
+      <StatRow text="Batting Average .275 - .300" success={false} />
       <StatRow text="GPA 2.5" success={false} />
     </div>
   );
