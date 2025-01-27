@@ -7,7 +7,11 @@ interface StatRowProps {
 
 const StatRow = ({ text, success = true }: StatRowProps) => (
   <div className="flex items-center gap-2 text-xs text-[#55556a] mb-2">
-    <i className={`ti ti-${success ? 'check text-[#00b37a]' : 'x text-[#ff4d4d]'}`} />
+    <img 
+      src={success ? "/lovable-uploads/96b7f9cc-84ef-4662-90d7-b4f0c8115f84.png" : "/lovable-uploads/027e42bb-5876-426d-94b4-7bc52160f56d.png"} 
+      alt={success ? "check" : "x"} 
+      className="w-4 h-4"
+    />
     <span>{text}</span>
   </div>
 );
